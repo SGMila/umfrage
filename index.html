@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Barrierefreiheit im Hamburger ÖPNV – Umfrageergebnisse</title>
+<meta name="description" content="Ausführliche Ergebnisse einer Umfrage unter Mitgliedern der Deutschen Gesellschaft für Muskelkranke zur Barrierefreiheit im Hamburger ÖPNV.">
+<style>
+:root{--primary:#1B2BD1;--primary-dark:#0F1C94;--ink:#151A3D;--muted:#4E5470;--line:#DDE2F2;--soft:#F2F5FF;--bg:#FFFFFF;--bar:#0021A5;--track:#E6ECFA}
+*{box-sizing:border-box}
+html{font-size:17px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
+.wrap{max-width:780px;margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--primary);color:#fff;padding:8px 12px;border-radius:6px;z-index:10}
+.skip:focus{left:8px}
+a{color:var(--primary)}
+a:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:4px}
+header.hero{padding:44px 0 28px;border-bottom:5px solid var(--primary)}
+.kicker{margin:0;font-weight:800;letter-spacing:.32em;text-transform:uppercase;color:var(--primary);font-size:.78rem}
+h1{margin:.35em 0 .4em;font-size:clamp(1.75rem,6vw,2.6rem);line-height:1.12;color:var(--primary);font-weight:850;letter-spacing:-.01em}
+.rq{margin:0;font-size:1.08rem;font-weight:650;color:var(--ink)}
+.sub{margin:.8em 0 0;color:var(--muted)}
+nav.toc ul{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+nav.toc a{display:inline-block;padding:6px 12px;border:1.5px solid var(--primary);border-radius:999px;text-decoration:none;font-size:.88rem;font-weight:600}
+nav.toc a:hover{background:var(--primary);color:#fff}
+main section{padding:36px 0 8px}
+h2{font-size:1.5rem;line-height:1.2;color:var(--primary);margin:0 0 .7em;font-weight:800}
+h3{font-size:1.12rem;line-height:1.35;margin:.2em 0 .9em}
+h4{margin:0 0 .3em;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--primary-dark)}
+.kpis{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.kpis li{background:var(--soft);border-left:5px solid var(--primary);border-radius:10px;padding:14px 14px 12px}
+.kpis b{display:block;font-size:1.55rem;line-height:1.1;color:var(--primary);font-weight:850}
+.kpis span{display:block;margin-top:4px;font-size:.92rem;color:var(--ink);line-height:1.35}
+@media(min-width:720px){.kpis{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--soft);border-radius:12px;padding:18px 20px}
+.card p{margin:.4em 0}
+dl.facts{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:0}
+dl.facts dt{font-weight:700}
+dl.facts dd{margin:0}
+@media(max-width:480px){dl.facts{grid-template-columns:1fr} dl.facts dd{margin-bottom:6px}}
+.q{border-top:1px solid var(--line);padding:26px 0 18px}
+.block h2+.q{border-top:none;padding-top:4px}
+.qmeta{margin:0;font-size:.8rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.badge{background:var(--primary);color:#fff;border-radius:999px;padding:1px 9px;font-size:.72rem;letter-spacing:.03em}
+figure{margin:0}
+figcaption{margin-top:10px;font-size:.84rem;color:var(--muted)}
+.bars{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.bars li{display:grid;grid-template-columns:1fr auto;grid-template-areas:"l v" "t t";gap:3px 12px;align-items:end}
+.bl{grid-area:l;font-size:.95rem;line-height:1.3}
+.bv{grid-area:v;font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bp{font-weight:500;color:var(--muted);font-size:.88rem}
+.bt{grid-area:t;height:14px;background:var(--track);border-radius:7px;overflow:hidden}
+.bf{display:block;height:100%;background:var(--bar);border-radius:7px}
+.donut-wrap{display:flex;flex-wrap:wrap;gap:22px;align-items:center}
+.donut{width:170px;height:170px;border-radius:50%;position:relative;flex:none}
+.donut::after{content:"";position:absolute;inset:30px;background:var(--bg);border-radius:50%}
+.dc{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:1;font-size:.78rem;color:var(--muted)}
+.dc b{font-size:1.8rem;color:var(--ink);line-height:1}
+.legend{list-style:none;margin:0;padding:0;display:grid;gap:8px;flex:1;min-width:200px}
+.legend li{display:grid;grid-template-columns:16px 1fr auto;gap:10px;align-items:center}
+.sw{width:16px;height:16px;border-radius:4px;border:1px solid rgba(0,0,0,.12)}
+.lv{font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.other{margin:.8em 0 0;font-size:.9rem;color:var(--muted);font-style:italic}
+.interp{margin-top:16px;background:var(--soft);border-radius:10px;padding:14px 16px}
+.interp p{margin:0}
+blockquote{margin:0 0 14px;padding:12px 16px;border-left:5px solid var(--primary);background:var(--soft);border-radius:0 10px 10px 0;font-size:1.02rem}
+ul.plain{padding-left:1.2em;margin:.4em 0}
+ul.plain li{margin:.3em 0}
+footer{margin-top:40px;padding:22px 0 40px;border-top:5px solid var(--primary);color:var(--muted);font-size:.86rem}
+footer p{margin:.3em 0}
+@media print{nav.toc,.skip{display:none} .q{break-inside:avoid} body{font-size:12pt}}
+</style>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<header class="hero"><div class="wrap">
+  <p class="kicker">Umfrageergebnisse zum Plakat</p>
+  <h1>Barrierefreiheit im Hamburger ÖPNV</h1>
+  <p class="rq">Warum verzögert sich die Umsetzung der Barrierefreiheit im Hamburger ÖPNV, und welche Folgen hat das für Menschen mit körperlichen Behinderungen?</p>
+  <p class="sub">Auf dem Plakat ist nur Platz für vier Fragen. Hier finden Sie alle 12 Fragen der Umfrage mit Diagrammen und Interpretation.</p>
+  <nav class="toc" aria-label="Inhalt"><ul><li><a href="#ueberblick">Überblick</a></li><li><a href="#methodik">Zur Umfrage</a></li><li><a href="#nutzung">Nutzung und Gesamteindruck</a></li><li><a href="#barrieren">Erlebte Barrieren und Informationen</a></li><li><a href="#folgen">Folgen im Alltag</a></li><li><a href="#bewertung">Bewertung und Ausblick</a></li><li><a href="#stimmen">Stimmen</a></li><li><a href="#grenzen">Grenzen</a></li><li><a href="#fazit">Fazit</a></li></ul></nav>
+</div></header>
+
+<main id="inhalt" class="wrap">
+<section id="ueberblick">
+  <h2>Die wichtigsten Ergebnisse auf einen Blick</h2>
+  <ul class="kpis"><li><b>18 von 19</b><span>haben defekte oder fehlende Aufzüge erlebt</span></li><li><b>14 von 19</b><span>mussten wegen Barrieren schon eine Route ändern</span></li><li><b>9 von 19</b><span>haben wegen Barrieren ganz auf eine Fahrt verzichtet</span></li><li><b>13 von 19</b><span>finden das Tempo der Verbesserungen zu langsam</span></li></ul>
+</section>
+
+<section id="methodik">
+  <h2>Zur Umfrage</h2>
+  <div class="card">
+    <p>Am 20.09.2026 habe ich auf der Versammlung der Deutschen Gesellschaft für Muskelkranke (DGM) eine Umfrage durchgeführt. Dabei haben 19 Mitglieder meinen Fragebogen mit insgesamt 12 Fragen zu ihren Erfahrungen im HVV ausgefüllt.</p>
+    <dl class="facts">
+      <dt>Befragte</dt><dd>19 Mitglieder der DGM (Menschen mit Muskelerkrankungen)</dd>
+      <dt>Methode</dt><dd>Anonymer Papierfragebogen, Auswertung per Strichliste</dd>
+      <dt>Fragen</dt><dd>12 geschlossene Fragen und ein freies Feld für Anmerkungen; bei Frage 3 und 11 waren mehrere Antworten möglich</dd>
+      <dt>Hypothese</dt><dd>Betroffene erleben den ÖPNV als deutlich weniger barrierefrei, als es die offiziellen Angaben nahelegen, und erfahren dadurch im Alltag Einschränkungen in Selbstständigkeit und Teilhabe.</dd>
+    </dl>
+    <p style="font-size:.88rem;color:var(--muted)">„HVV“ steht im Fragebogen stellvertretend für alle öffentlichen Verkehrsmittel wie Bus, U-Bahn und S-Bahn. Prozentwerte sind gerundet und beziehen sich auf alle Personen, die die jeweilige Frage beantwortet haben.</p>
+  </div>
+</section>
+
+<section class="block" id="nutzung"><h2>Nutzung und Gesamteindruck</h2>
+<article class="q" id="frage-1">
+  <p class="qmeta">Frage 1</p>
+  <h3>Wie häufig nutzen Sie den Hamburger ÖPNV?</h3>
+  <figure><ul class="bars"><li><span class="bl">Täglich</span><span class="bt" aria-hidden="true"><span class="bf" style="width:21.1%"></span></span><span class="bv">4<span class="bp"> (21&nbsp;%)</span></span></li><li><span class="bl">Mehrmals pro Woche</span><span class="bt" aria-hidden="true"><span class="bf" style="width:26.3%"></span></span><span class="bv">5<span class="bp"> (26&nbsp;%)</span></span></li><li><span class="bl">Mehrmals pro Monat</span><span class="bt" aria-hidden="true"><span class="bf" style="width:21.1%"></span></span><span class="bv">4<span class="bp"> (21&nbsp;%)</span></span></li><li><span class="bl">Seltener</span><span class="bt" aria-hidden="true"><span class="bf" style="width:31.6%"></span></span><span class="bv">6<span class="bp"> (32&nbsp;%)</span></span></li><li><span class="bl">Nie</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li><li><span class="bl">Keine Angabe</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li></ul><figcaption>n = 19 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Alle Befragten nutzen den HVV zumindest gelegentlich, ihre Antworten beruhen also auf eigener Erfahrung. 9 von 19 fahren täglich oder mehrmals pro Woche, 6 nutzen den ÖPNV seltener als mehrmals im Monat.</p></div>
+</article>
+<article class="q" id="frage-2">
+  <p class="qmeta">Frage 2</p>
+  <h3>Wie beurteilen Sie insgesamt die Barrierefreiheit des Hamburger ÖPNV?</h3>
+  <figure><ul class="bars"><li><span class="bl">Sehr gut</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li><li><span class="bl">Eher gut</span><span class="bt" aria-hidden="true"><span class="bf" style="width:15.8%"></span></span><span class="bv">3<span class="bp"> (16&nbsp;%)</span></span></li><li><span class="bl">Teils/teils</span><span class="bt" aria-hidden="true"><span class="bf" style="width:68.4%"></span></span><span class="bv">13<span class="bp"> (68&nbsp;%)</span></span></li><li><span class="bl">Eher schlecht</span><span class="bt" aria-hidden="true"><span class="bf" style="width:10.5%"></span></span><span class="bv">2<span class="bp"> (11&nbsp;%)</span></span></li><li><span class="bl">Sehr schlecht</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li><li><span class="bl">Kann ich nicht beurteilen</span><span class="bt" aria-hidden="true"><span class="bf" style="width:5.3%"></span></span><span class="bv">1<span class="bp"> (5&nbsp;%)</span></span></li></ul><figcaption>n = 19 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Das Gesamturteil fällt verhalten aus: Die große Mehrheit (13 von 19) bewertet die Barrierefreiheit nur mit „teils/teils“. Niemand vergibt „sehr gut“, lediglich 3 Personen „eher gut“.</p></div>
+</article></section><section class="block" id="barrieren"><h2>Erlebte Barrieren und Informationen</h2>
+<article class="q" id="frage-3">
+  <p class="qmeta">Frage 3 · Mehrfachauswahl<span class="badge">auch auf dem Plakat</span></p>
+  <h3>Welche der folgenden Barrieren haben Sie bei der Nutzung des Hamburger ÖPNV bereits erlebt?</h3>
+  <figure><ul class="bars"><li><span class="bl">Defekte oder fehlende Aufzüge</span><span class="bt" aria-hidden="true"><span class="bf" style="width:94.7%"></span></span><span class="bv">18<span class="bp"> (95&nbsp;%)</span></span></li><li><span class="bl">Zu große Spalten oder Höhenunterschiede beim Einstieg</span><span class="bt" aria-hidden="true"><span class="bf" style="width:73.7%"></span></span><span class="bv">14<span class="bp"> (74&nbsp;%)</span></span></li><li><span class="bl">Nicht barrierefreie Umsteigewege</span><span class="bt" aria-hidden="true"><span class="bf" style="width:63.2%"></span></span><span class="bv">12<span class="bp"> (63&nbsp;%)</span></span></li><li><span class="bl">Fehlende oder unzuverlässige Informationen</span><span class="bt" aria-hidden="true"><span class="bf" style="width:36.8%"></span></span><span class="bv">7<span class="bp"> (37&nbsp;%)</span></span></li><li><span class="bl">Zu enge Aufzüge</span><span class="bt" aria-hidden="true"><span class="bf" style="width:26.3%"></span></span><span class="bv">5<span class="bp"> (26&nbsp;%)</span></span></li><li><span class="bl">Schwer zugängliche Fahrkartenautomaten</span><span class="bt" aria-hidden="true"><span class="bf" style="width:5.3%"></span></span><span class="bv">1<span class="bp"> (5&nbsp;%)</span></span></li><li><span class="bl">Sonstiges</span><span class="bt" aria-hidden="true"><span class="bf" style="width:5.3%"></span></span><span class="bv">1<span class="bp"> (5&nbsp;%)</span></span></li><li><span class="bl">Keine der genannten</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li></ul><figcaption>n = 19 Antwortende · Mehrfachnennungen möglich, Prozent bezogen auf alle Antwortenden</figcaption></figure>
+  <p class="other">Sonstiges: „Zu wenig Möglichkeiten, um die Barrierefreiheit möglich zu machen“</p>
+  <div class="interp"><h4>Interpretation</h4><p>Defekte oder fehlende Aufzüge hat fast jede befragte Person schon erlebt (18 von 19). Dahinter folgen Spalten und Höhenunterschiede beim Einstieg (14) und nicht barrierefreie Umsteigewege (12). Das passt zur Recherche: Selbst wenn fast alle U-Bahn-Haltestellen einen Aufzug haben (89 von 93), hilft das Betroffenen nur, wenn dieser auch funktioniert.</p></div>
+</article>
+<article class="q" id="frage-4">
+  <p class="qmeta">Frage 4</p>
+  <h3>Haben Sie schon einmal erlebt, dass eine als barrierefrei gekennzeichnete Verbindung für Sie tatsächlich nicht barrierefrei nutzbar war?</h3>
+  <figure><div class="donut-wrap"><div class="donut" aria-hidden="true" style="background:conic-gradient(#0021A5 0.00% 26.32%, #4F86C6 26.32% 52.63%, #9CC7F5 52.63% 89.47%, #DCE9FB 89.47% 100.00%)"><span class="dc"><b>19</b>Antworten</span></div><ul class="legend"><li><span class="sw" style="background:#0021A5"></span><span class="ll">Ja, mehrfach</span><span class="lv">5 (26&nbsp;%)</span></li><li><span class="sw" style="background:#4F86C6"></span><span class="ll">Ja, einmal</span><span class="lv">5 (26&nbsp;%)</span></li><li><span class="sw" style="background:#9CC7F5"></span><span class="ll">Nein</span><span class="lv">7 (37&nbsp;%)</span></li><li><span class="sw" style="background:#DCE9FB"></span><span class="ll">Weiß nicht / keine Angabe</span><span class="lv">2 (11&nbsp;%)</span></li></ul></div><figcaption>n = 19 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Mehr als die Hälfte der Befragten (10 von 19) stand bereits vor Verbindungen, die als barrierefrei ausgewiesen, in der Praxis aber nicht nutzbar waren, die Hälfte davon sogar mehrfach. Das zeigt, dass sich Menschen mit Einschränkungen oft nicht auf die Vorabplanung verlassen können, was eine enorme Hürde darstellt.</p></div>
+</article>
+<article class="q" id="frage-5">
+  <p class="qmeta">Frage 5</p>
+  <h3>Wie zuverlässig sind die Informationen des HVV zur Barrierefreiheit Ihrer Erfahrung nach?</h3>
+  <figure><ul class="bars"><li><span class="bl">Sehr zuverlässig</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li><li><span class="bl">Eher zuverlässig</span><span class="bt" aria-hidden="true"><span class="bf" style="width:15.8%"></span></span><span class="bv">3<span class="bp"> (16&nbsp;%)</span></span></li><li><span class="bl">Teils/teils</span><span class="bt" aria-hidden="true"><span class="bf" style="width:63.2%"></span></span><span class="bv">12<span class="bp"> (63&nbsp;%)</span></span></li><li><span class="bl">Eher unzuverlässig</span><span class="bt" aria-hidden="true"><span class="bf" style="width:5.3%"></span></span><span class="bv">1<span class="bp"> (5&nbsp;%)</span></span></li><li><span class="bl">Sehr unzuverlässig</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li><li><span class="bl">Nutze diese Informationen nicht</span><span class="bt" aria-hidden="true"><span class="bf" style="width:5.3%"></span></span><span class="bv">1<span class="bp"> (5&nbsp;%)</span></span></li><li><span class="bl">Keine Angabe</span><span class="bt" aria-hidden="true"><span class="bf" style="width:10.5%"></span></span><span class="bv">2<span class="bp"> (11&nbsp;%)</span></span></li></ul><figcaption>n = 19 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Passend dazu halten 12 von 19 die HVV-Informationen zur Barrierefreiheit nur für „teils/teils“ zuverlässig, lediglich 3 für „eher zuverlässig“. Eine befragte Person merkte an, dass der angezeigte Aufzugsstatus auf ihren Verbindungen häufig nicht mit der Realität übereinstimmt.</p></div>
+</article></section><section class="block" id="folgen"><h2>Folgen im Alltag</h2>
+<article class="q" id="frage-6">
+  <p class="qmeta">Frage 6<span class="badge">auch auf dem Plakat</span></p>
+  <h3>Mussten Sie aufgrund fehlender Barrierefreiheit bereits eine geplante Route ändern?</h3>
+  <figure><div class="donut-wrap"><div class="donut" aria-hidden="true" style="background:conic-gradient(#0021A5 0.00% 47.37%, #4F86C6 47.37% 73.68%, #9CC7F5 73.68% 89.47%, #DCE9FB 89.47% 100.00%)"><span class="dc"><b>19</b>Antworten</span></div><ul class="legend"><li><span class="sw" style="background:#0021A5"></span><span class="ll">Ja, mehrfach</span><span class="lv">9 (47&nbsp;%)</span></li><li><span class="sw" style="background:#4F86C6"></span><span class="ll">Ja, einmal</span><span class="lv">5 (26&nbsp;%)</span></li><li><span class="sw" style="background:#9CC7F5"></span><span class="ll">Nein</span><span class="lv">3 (16&nbsp;%)</span></li><li><span class="sw" style="background:#DCE9FB"></span><span class="ll">Keine Angabe</span><span class="lv">2 (11&nbsp;%)</span></li></ul></div><figcaption>n = 19 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Die Einschränkung im Alltag wird hier massiv sichtbar: Fast drei Viertel der Befragten (14 von 19) mussten aufgrund fehlender Barrierefreiheit bereits geplante Routen ändern, 9 davon sogar mehrfach. Der ÖPNV zwingt die Betroffenen also häufig zu zeitraubenden und unfreiwilligen Umwegen.</p></div>
+</article>
+<article class="q" id="frage-7">
+  <p class="qmeta">Frage 7</p>
+  <h3>Haben Sie aufgrund bestehender Barrieren schon einmal auf eine Fahrt mit dem HVV verzichtet?</h3>
+  <figure><div class="donut-wrap"><div class="donut" aria-hidden="true" style="background:conic-gradient(#0021A5 0.00% 36.84%, #4F86C6 36.84% 47.37%, #9CC7F5 47.37% 84.21%, #DCE9FB 84.21% 100.00%)"><span class="dc"><b>19</b>Antworten</span></div><ul class="legend"><li><span class="sw" style="background:#0021A5"></span><span class="ll">Ja, mehrfach</span><span class="lv">7 (37&nbsp;%)</span></li><li><span class="sw" style="background:#4F86C6"></span><span class="ll">Ja, einmal</span><span class="lv">2 (11&nbsp;%)</span></li><li><span class="sw" style="background:#9CC7F5"></span><span class="ll">Nein</span><span class="lv">7 (37&nbsp;%)</span></li><li><span class="sw" style="background:#DCE9FB"></span><span class="ll">Keine Angabe</span><span class="lv">3 (16&nbsp;%)</span></li></ul></div><figcaption>n = 19 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Fast die Hälfte der Befragten (9 von 19) hat aufgrund von Barrieren bereits komplett auf eine Fahrt verzichtet, 7 davon mehrfach. Wenn der ÖPNV dazu führt, dass Menschen gar nicht erst losfahren können, verfehlt er seinen Kernzweck: Mobilität für alle.</p></div>
+</article>
+<article class="q" id="frage-8">
+  <p class="qmeta">Frage 8</p>
+  <h3>Wie stark schränken bestehende Barrieren Ihre selbstständige Nutzung des HVV ein?</h3>
+  <figure><ul class="bars"><li><span class="bl">Sehr stark</span><span class="bt" aria-hidden="true"><span class="bf" style="width:5.6%"></span></span><span class="bv">1<span class="bp"> (6&nbsp;%)</span></span></li><li><span class="bl">Eher stark</span><span class="bt" aria-hidden="true"><span class="bf" style="width:22.2%"></span></span><span class="bv">4<span class="bp"> (22&nbsp;%)</span></span></li><li><span class="bl">Teilweise</span><span class="bt" aria-hidden="true"><span class="bf" style="width:44.4%"></span></span><span class="bv">8<span class="bp"> (44&nbsp;%)</span></span></li><li><span class="bl">Kaum</span><span class="bt" aria-hidden="true"><span class="bf" style="width:22.2%"></span></span><span class="bv">4<span class="bp"> (22&nbsp;%)</span></span></li><li><span class="bl">Gar nicht</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li><li><span class="bl">Keine Angabe</span><span class="bt" aria-hidden="true"><span class="bf" style="width:5.6%"></span></span><span class="bv">1<span class="bp"> (6&nbsp;%)</span></span></li></ul><figcaption>n = 18 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Laut § 4 Behindertengleichstellungsgesetz (BGG) sind Verkehrsmittel nur dann barrierefrei, wenn Menschen mit Behinderungen sie ohne besondere Erschwernis und grundsätzlich ohne fremde Hilfe nutzen können. Die Umfrage zeigt jedoch, dass diese Selbstständigkeit eingeschränkt ist: 13 von 18 Befragten fühlen sich stark bis teilweise eingeschränkt, niemand gar nicht. Das gesetzliche Ziel wird im Alltag offensichtlich verfehlt.</p></div>
+</article>
+<article class="q" id="frage-9">
+  <p class="qmeta">Frage 9<span class="badge">auch auf dem Plakat</span></p>
+  <h3>Wie häufig sind Sie bei der Nutzung des HVV aufgrund von Barrieren auf fremde Hilfe angewiesen?</h3>
+  <figure><ul class="bars"><li><span class="bl">Häufig</span><span class="bt" aria-hidden="true"><span class="bf" style="width:33.3%"></span></span><span class="bv">6<span class="bp"> (33&nbsp;%)</span></span></li><li><span class="bl">Manchmal</span><span class="bt" aria-hidden="true"><span class="bf" style="width:16.7%"></span></span><span class="bv">3<span class="bp"> (17&nbsp;%)</span></span></li><li><span class="bl">Selten</span><span class="bt" aria-hidden="true"><span class="bf" style="width:11.1%"></span></span><span class="bv">2<span class="bp"> (11&nbsp;%)</span></span></li><li><span class="bl">Nie</span><span class="bt" aria-hidden="true"><span class="bf" style="width:11.1%"></span></span><span class="bv">2<span class="bp"> (11&nbsp;%)</span></span></li><li><span class="bl">Nicht relevant / keine Angabe</span><span class="bt" aria-hidden="true"><span class="bf" style="width:27.8%"></span></span><span class="bv">5<span class="bp"> (28&nbsp;%)</span></span></li></ul><figcaption>n = 18 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Auch hier zeigt sich die fehlende Umsetzung des BGG deutlich: 6 von 18 Befragten sind häufig, weitere 3 manchmal auf fremde Hilfe angewiesen. Anstatt den ÖPNV eigenständig nutzen zu können, geraten Betroffene durch bauliche und organisatorische Barrieren in die Abhängigkeit von anderen. Das widerspricht dem gesetzlichen Anspruch auf ein selbstständiges Leben massiv.</p></div>
+</article></section><section class="block" id="bewertung"><h2>Bewertung und Ausblick</h2>
+<article class="q" id="frage-10">
+  <p class="qmeta">Frage 10<span class="badge">auch auf dem Plakat</span></p>
+  <h3>Wie beurteilen Sie das Tempo, mit dem die Barrierefreiheit im Hamburger ÖPNV verbessert wird?</h3>
+  <figure><ul class="bars"><li><span class="bl">Viel zu langsam</span><span class="bt" aria-hidden="true"><span class="bf" style="width:21.1%"></span></span><span class="bv">4<span class="bp"> (21&nbsp;%)</span></span></li><li><span class="bl">Eher zu langsam</span><span class="bt" aria-hidden="true"><span class="bf" style="width:47.4%"></span></span><span class="bv">9<span class="bp"> (47&nbsp;%)</span></span></li><li><span class="bl">Angemessen</span><span class="bt" aria-hidden="true"><span class="bf" style="width:21.1%"></span></span><span class="bv">4<span class="bp"> (21&nbsp;%)</span></span></li><li><span class="bl">Eher schnell</span><span class="bt" aria-hidden="true"><span class="bf" style="width:10.5%"></span></span><span class="bv">2<span class="bp"> (11&nbsp;%)</span></span></li><li><span class="bl">Sehr schnell</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li><li><span class="bl">Kann ich nicht beurteilen</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li></ul><figcaption>n = 19 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Die Unzufriedenheit mit der Umsetzung ist groß: 13 von 19 Befragten empfinden das Tempo als zu langsam, niemand als „sehr schnell“. Aus Sicht der Betroffenen müssen Politik und HVV hier deutlich schneller handeln.</p></div>
+</article>
+<article class="q" id="frage-11">
+  <p class="qmeta">Frage 11 · Mehrfachauswahl</p>
+  <h3>In welchem Bereich sehen Sie den dringendsten Verbesserungsbedarf?</h3>
+  <figure><ul class="bars"><li><span class="bl">Aufzüge und Zugänge</span><span class="bt" aria-hidden="true"><span class="bf" style="width:73.7%"></span></span><span class="bv">14<span class="bp"> (74&nbsp;%)</span></span></li><li><span class="bl">Ein- und Ausstieg</span><span class="bt" aria-hidden="true"><span class="bf" style="width:57.9%"></span></span><span class="bv">11<span class="bp"> (58&nbsp;%)</span></span></li><li><span class="bl">Barrierefreie Umsteigewege</span><span class="bt" aria-hidden="true"><span class="bf" style="width:57.9%"></span></span><span class="bv">11<span class="bp"> (58&nbsp;%)</span></span></li><li><span class="bl">Informationen zur Barrierefreiheit</span><span class="bt" aria-hidden="true"><span class="bf" style="width:36.8%"></span></span><span class="bv">7<span class="bp"> (37&nbsp;%)</span></span></li><li><span class="bl">Unterstützung durch Personal</span><span class="bt" aria-hidden="true"><span class="bf" style="width:26.3%"></span></span><span class="bv">5<span class="bp"> (26&nbsp;%)</span></span></li><li><span class="bl">Fahrkartenautomaten</span><span class="bt" aria-hidden="true"><span class="bf" style="width:10.5%"></span></span><span class="bv">2<span class="bp"> (11&nbsp;%)</span></span></li><li><span class="bl">Sonstiges</span><span class="bt" aria-hidden="true"><span class="bf" style="width:5.3%"></span></span><span class="bv">1<span class="bp"> (5&nbsp;%)</span></span></li><li><span class="bl">Keine Angabe</span><span class="bt" aria-hidden="true"><span class="bf" style="width:0.0%"></span></span><span class="bv">0<span class="bp"> (0&nbsp;%)</span></span></li></ul><figcaption>n = 19 Antwortende · Mehrfachnennungen möglich, Prozent bezogen auf alle Antwortenden</figcaption></figure>
+  <p class="other">Sonstiges: „Infoflyer an Bahnhöfen oder HVV-Stellen“</p>
+  <div class="interp"><h4>Interpretation</h4><p>Diese Frage liefert konkrete Handlungsempfehlungen: Den dringendsten Verbesserungsbedarf sehen die Betroffenen bei Aufzügen und Zugängen (14 Nennungen), gefolgt von Ein- und Ausstieg sowie barrierefreien Umsteigewegen (je 11). Auch verlässliche Informationen zur Barrierefreiheit (7) bleiben eine wichtige Baustelle.</p></div>
+</article>
+<article class="q" id="frage-12">
+  <p class="qmeta">Frage 12</p>
+  <h3>Haben Sie aufgrund der angekündigten Barrierefreiheit für Olympia in Hamburg abgestimmt?</h3>
+  <figure><div class="donut-wrap"><div class="donut" aria-hidden="true" style="background:conic-gradient(#0021A5 0.00% 31.58%, #4F86C6 31.58% 78.95%, #9CC7F5 78.95% 100.00%, #DCE9FB 100.00% 100.00%)"><span class="dc"><b>19</b>Antworten</span></div><ul class="legend"><li><span class="sw" style="background:#0021A5"></span><span class="ll">Ja</span><span class="lv">6 (32&nbsp;%)</span></li><li><span class="sw" style="background:#4F86C6"></span><span class="ll">Nein</span><span class="lv">9 (47&nbsp;%)</span></li><li><span class="sw" style="background:#9CC7F5"></span><span class="ll">Eher aufgrund anderer Dinge</span><span class="lv">4 (21&nbsp;%)</span></li><li><span class="sw" style="background:#DCE9FB"></span><span class="ll">Keine Antwort</span><span class="lv">0 (0&nbsp;%)</span></li></ul></div><figcaption>n = 19 Antwortende</figcaption></figure>
+  
+  <div class="interp"><h4>Interpretation</h4><p>Für knapp ein Drittel der Befragten (6 von 19) war die angekündigte Barrierefreiheit ein Grund für ihre Abstimmung zu Olympia in Hamburg. Die Mehrheit (9) verneinte dies, 4 stimmten eher aus anderen Gründen ab. Politische Versprechen zur Barrierefreiheit spielten also für einen Teil der Betroffenen eine Rolle, waren für die meisten aber nicht ausschlaggebend.</p></div>
+</article></section>
+
+<section id="stimmen">
+  <h2>Stimmen der Befragten</h2>
+  <p>Im freien Feld für Anmerkungen zu persönlichen Erfahrungen wurde unter anderem geschrieben:</p>
+  <blockquote>„Für unsere Gesellschaft mehr Sensibilität für alle, damit die Inklusion einwandfrei funktionieren kann.“</blockquote>
+  <blockquote>„Viele Aufzüge auf meinen Verbindungen funktionieren nicht, obwohl sie auf dem Plan als funktionsfähig angezeigt werden.“</blockquote>
+</section>
+
+<section id="grenzen">
+  <h2>Grenzen der Umfrage</h2>
+  <ul class="plain">
+    <li>Mit 19 Befragten ist die Stichprobe klein. Die Ergebnisse sind nicht repräsentativ für alle Menschen mit Behinderungen in Hamburg (über 240.000), zeigen aber deutliche Tendenzen.</li>
+    <li>Alle Befragten stammen aus einer Organisation und haben Muskelerkrankungen. Das passt zur Forschungsfrage (körperliche Behinderungen), Erfahrungen etwa von blinden oder gehörlosen Menschen sind aber nicht abgebildet.</li>
+    <li>Die Antworten beruhen auf Selbstauskunft und persönlicher Erinnerung.</li>
+    <li>Nicht alle Befragten haben jede Frage beantwortet (Frage 8 und 9: 18 Antworten).</li>
+  </ul>
+</section>
+
+<section id="fazit">
+  <h2>Was bedeutet das für die Hypothese?</h2>
+  <div class="card">
+    <p>Die Umfrage stützt den zweiten Teil meiner Hypothese: Betroffene erleben den ÖPNV als deutlich weniger barrierefrei, als offizielle Angaben nahelegen. Verbindungen, die als barrierefrei gekennzeichnet sind, erweisen sich in der Praxis oft als nicht nutzbar, und defekte Aufzüge gehören für fast alle Befragten zum Alltag.</p>
+    <p>Die Folgen sind konkret: geänderte Routen, abgebrochene oder gar nicht erst angetretene Fahrten und die Abhängigkeit von fremder Hilfe. Damit wird das gesetzliche Ziel einer selbstständigen Nutzung (§ 4 BGG) im Alltag verfehlt. Den dringendsten Handlungsbedarf sehen die Befragten bei Aufzügen und Zugängen, beim Ein- und Ausstieg und bei barrierefreien Umsteigewegen.</p>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <p><strong>Schulprojekt im Fach PGW, Oberstufe · Carl-von-Ossietzky-Gymnasium Hamburg · 2026</strong></p>
+  <p>Die Umfrage war anonym. Diese Seite verwendet keine Cookies, kein Tracking und keine externen Dienste.</p>
+  <p>Umsetzung der Webseite mit Unterstützung von KI (Claude, Anthropic); Daten, Auswertung und Interpretation stammen aus dem Projekt.</p>
+</div></footer>
+</body>
+</html>
